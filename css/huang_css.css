@@ -1,0 +1,357 @@
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    background: #040426;
+    color: white;
+}
+body a{
+    color: white !important;
+    transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -o-transition:0.5s all;
+    -ms-transition:0.5s all;
+}
+body h1,h2,h3,h4,h5,h6{
+    font-family: 'Asap', sans-serif;
+}
+#home{
+    background: url(../img/huang.jpg) no-repeat center top ;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height:650px;
+    position: relative;
+}
+.collapse ul li a{
+    font-size: 20px;
+}
+.navbar-brand{
+    font-size: 25px;
+}
+
+.container{
+    margin-top: 20px;
+}
+.navbar-default{
+    background-color: transparent;
+    border-color: transparent;
+}
+.logo{
+    border: 7px solid #00a78e;
+    padding: 0px 14px;
+    font-size: 1.2em;
+    color: #fff;
+}
+/*导航栏特效*/
+#myNavbar a::before,
+#myNavbar a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+
+#myNavbar a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+#myNavbar  a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+#myNavbar a:hover::before,
+#myNavbar a:hover::after,
+#myNavbar a:focus::before,
+#myNavbar a:focus::after{
+    color:#00a78e;
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+.banner{
+    width:90%;
+    padding: 10px;
+    margin:0 auto;
+    /*background-color: transparent;*/
+    background-color: rgba(47,45,45,.5);
+}
+
+@media only screen and (max-width: 480px){
+    ul.address li ul.address-text li{
+        margin-left:16px;
+    }
+}
+
+/*banner左边样式*/
+.banner-left h1{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2em;
+    color: #FFF;
+    background: #00a78e;
+    padding: .5em 1.5em;
+    position: relative;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.banner-left h1:before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: '';
+    bottom: -9px;
+    left: 12px;
+    border-style: solid;
+    border-width: 14px 11px 0 12px;
+    border-color: #00a78e transparent transparent transparent;
+
+}
+.navigation-hr{
+    margin-top:30px;
+    margin-left:0px;
+    margin-bottom: 0px;
+    padding: 0;
+    width:80%;
+    border:0.8px solid #AFAFAF ;
+}
+ul.address {
+    margin-top: 0.2em;
+    padding-top: 0.5em;
+    padding-left: 0px;
+}
+ul.address li {
+    display: block;
+}
+ul.address-text{
+    padding-left: 0px;
+}
+
+ul.address li ul.address-text li {
+    display: inline-block;
+    font-size: 1em;
+    color: #fff;
+    margin-top: 1em;
+    font-weight: 400;
+}
+
+ul.address li ul.address-text li:nth-child(1){
+    width: 20%;
+}
+
+ul.address li ul.address-text li a {
+    color: #fff;
+    text-decoration:none;
+}
+
+ul.address li ul.address-text li a:hover{
+    color: #00a78e;
+}
+
+ul.address-text b {
+    color:#fff;
+}
+
+
+/*banner右边样式*/
+.banner-right{
+    padding: 10px;
+
+}
+.banner-right .my-img{
+    width: 100%;
+}
+
+/*About样式*/
+.about-left{
+    max-height:580px;
+    overflow: hidden;
+    padding: 2.01em 0 4.7em 0;
+    float: right;
+    /*background: #f4f4f4;*/
+    background-color: rgba(47,45,45,.3);
+}
+.item{
+    padding: 0.25em 0 4.7em 0;
+    background-color: transparent;
+    /*background: #f4f4f4;*/
+}
+.item p{
+    color: gray;
+}
+.about-left-grid{
+    margin-right: 5em;
+    margin-left: 5em;
+}
+.about-left-grid h2{
+    color:#00a78e;
+}
+.about-left-grid h3{
+    color:darkgray;
+}
+.about-left-grid h2 span{
+    font-size: 2em;
+}
+
+/*幽灵按钮设置*/
+
+.my-btn{
+    position: relative;
+    margin:1em 0.5em;
+    color: white;
+    background-color: #00a78e;
+    border:1px dashed #00a78e;
+    border-radius: inherit;
+}
+.my-btn:hover{
+    color: #00a78e !important;
+    background-color: whitesmoke;
+    border:2px solid white;
+}
+
+.my-btn .line{
+    position: absolute;
+    display: block;
+
+}
+
+.my-btn:hover .line{
+    background: #00a78e;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s  ease;
+    -ms-transition: 0.4s  ease;
+    -o-transition: 0.4s  ease;
+    transition: 0.4s  ease;
+}
+/*上面线条*/
+.my-btn .line-top{
+    width:0;
+    height:2px;
+    left:-110%;
+    top:-2px;
+}
+
+.my-btn:hover .line-top{
+    width:102%;
+    left:-2px;
+}
+
+/*下边线条*/
+.my-btn .line-bottom{
+    width:0;
+    height:2px;
+    right:-110%;
+    bottom: -2px;
+}
+
+.my-btn:hover .line-bottom{
+    width: 102%;
+    right: -2px;
+}
+
+/*左边线条*/
+.my-btn .line-left{
+    width: 2px;
+    height:0;
+    bottom:-110%;
+    left:-2px;
+}
+
+.my-btn:hover .line-left{
+    height:102%;
+    bottom: -2px;
+}
+
+/*右边线条*/
+.my-btn .line-right{
+    width:2px;
+    height:0;
+    top:-110%;
+    right:-2px;
+}
+
+.my-btn:hover .line-right{
+    height:102%;
+    top:-2px;
+}
+
+.about-right{
+    float: right;
+    padding:0;
+    background:url(../img/friend01.jpg) no-repeat 0px 0px;
+    min-height:580px;
+    background-size: 100%;
+    -o-background-size: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -ms-background-size: 100%;
+}
+
+@media only screen and (max-width: 414px){
+    .about-left{
+        max-height: 470px;
+        margin-bottom:0px;
+        padding: 0px;
+    }
+    .about-left-grid{
+        margin-right: 0em;
+        margin-left: 1em;
+    }
+    .about-left-grid h2{
+        color:#00a78e;
+    }
+    .about-left-grid h3{
+        color:darkgray;
+    }
+    .about-left-grid h2 span{
+        font-size: 1em;
+    }
+    .about-right{
+        min-height:450px;
+    }
+}
+
+.footer{
+    margin-top: 4em;
+}
+footer{
+    width: 100%;
+    height: 5em;
+    background: #04021a;
+    margin-top:10px;
+    padding-top:1em;
+}
+
+footer  .glyphicon{
+    font-size: 2em;
+    color: #00a78e;
+}
+
+@media only screen and (max-width: 1000px){
+    .col-sm-6 {
+        width: 50%;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .col-sm-6 {
+        width: 50%;
+        padding-bottom: 10px;
+    }
+}
+
